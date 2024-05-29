@@ -84,7 +84,7 @@ Data visuals that may be appropriate include:
 This is the step where you have an inspection of what is in the data, errors, inconsistencies, and bugs.
 -	For our dataset,
     -	There are 4 columns that contain the data we need for this analysis.
-    -	
+    
 ##### Data cleaning
 The objective is to enhance our dataset to guarantee its organization and readiness for analysis.
 
