@@ -81,9 +81,31 @@ Data visuals that may be appropriate include:
 
 #### Development
 ##### Data exploration 
-This is the stage where you have an inspection of what is in the data, errors, inconsistencies, and bugs.
+This is the step where you have an inspection of what is in the data, errors, inconsistencies, and bugs.
 -	For our dataset,
-    -	There are 4 columns that contain the data we need for this analysis. 
+    -	There are 4 columns that contain the data we need for this analysis.
+    -	
+##### Data cleaning
+The objective is to enhance our dataset to guarantee its organization and readiness for analysis.
+
+The cleaned dataset should meet the following criteria and constraints:
+•	Each column should have data types that are suitable for its contents.
+•	No column should contain null values, indicating complete data for all records.(Data quality)
+
+Here is a tabular representation of the expected schema for the cleaned data:
+
+|Column Name	|Data Type	|Nullable|
+|-----------|-------|------|
+|Channel_name|	VARCHAR|	NO|
+|Total_subscribers|	INTEGER|	NO|
+|Total_views	|INTEGER|	NO|
+|Total_uploads|	INTEGER|	NO|
+
+##### Transform the data
+
+```sql
+```
+
 
 
 
