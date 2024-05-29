@@ -73,9 +73,9 @@ Data visuals that may be appropriate include:
 | Tool | Purpose |
 | ---- | ------- |
 |Excel | Exploring the data |
-|SQL Server |	Cleaning, testing, and analyzing the data|
-|Mokkup AI	|Designing the blueprint of the dashboard|
-|Power BI|	Visualizing the data using interactive dashboards|
+|SQL Server |Cleaning, testing, and analyzing the data|
+|Mokkup AI|Designing the blueprint of the dashboard|
+|Power BI|Visualizing the data using interactive dashboards|
 |GitHub	|Hosting the project documentation|
 
 #### Development
