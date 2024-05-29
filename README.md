@@ -5,10 +5,9 @@
 - [Data Source](#data-source)
 -	[Steps](#steps)
 -	[Design](#design)
-    -	[Blueprint](#blueprint)
+    -	[Dashboard Blueprint](#dashboard-blueprint)
     -	[Tools](#tools)
 -	[Development](#development)
-    -	[Pseudocode](#pseudocode)
     -	[Data Exploration](#data-exploration)
     -	[Data Cleaning](#data-cleaning)
     -	[Transform the Data](#transform-the-data)
@@ -79,6 +78,12 @@ Data visuals that may be appropriate include:
 |Mokkup AI	|Designing the blueprint of the dashboard|
 |Power BI|	Visualizing the data using interactive dashboards|
 |GitHub	|Hosting the project documentation|
+
+#### Development
+##### Data exploration 
+This is the stage where you have an inspection of what is in the data, errors, inconsistencies, and bugs.
+-	For our dataset,
+    -	There are 4 columns that contain the data we need for this analysis. 
 
 
 
