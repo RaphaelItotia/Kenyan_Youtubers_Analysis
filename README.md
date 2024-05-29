@@ -2,7 +2,7 @@
 
 ## Table of contents
 -	[Objective](#objective)
-- [Data Source](#data_source)
+- [Data Source](#data-source)
 -	Steps
 -	Design
     -	Blueprint
