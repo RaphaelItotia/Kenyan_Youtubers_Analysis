@@ -3,29 +3,29 @@
 ## Table of contents
 -	[Objective](#objective)
 - [Data Source](#data-source)
--	Steps
--	Design
-    -	Blueprint
-    -	Tools
--	Development
-    -	Pseudocode
-    -	Data Exploration
-    -	Data Cleaning
-    -	Transform the Data
-    -	Create the SQL View
--	Testing
-    -	Data Quality Tests
--	Visualization
-    -	Outcomes
-    -	DAX Measures
--	Analysis
-    -	Outcomes
-    -	Validation
-    -	Discovery
--	Recommendations
-    -	Potential ROI
-    -	Potential Courses of Actions
--	Conclusion
+-	[Steps](#steps)
+-	[Design](#design)
+    -	[Blueprint](#blueprint)
+    -	[Tools](#tools)
+-	[Development](#development)
+    -	[Pseudocode](#pseudocode)
+    -	[Data Exploration](#data-exploration)
+    -	[Data Cleaning](#data-cleaning)
+    -	[Transform the Data](#transform-the-data)
+    -	[Create the SQL View](#create-the-sql-view)
+-	[Testing](#testing)
+    -	[Data Quality Tests](#data-quality-tests)
+-	[Visualization](#visualization)
+    -	[Outcomes](#outcomes)
+    -	[DAX Measures](#dax-measures)
+-	[Analysis](#analysis)
+    -	[Outcomes](#outcomes)
+    -	[Validation](#validation)
+    -	[Discovery](#discovery)
+-	[Recommendations](#recommendations)
+    -	[Potential ROI](#potential-roi)
+    -	[Potential Courses of Actions](#potential-courses-of-actions)
+-	[Conclusion](#conclusion)
 ### Objective
 The Head of Marketing seeks to identify the optimal Kenyan YouTubers for conducting marketing campaigns over the marketing period.
 
