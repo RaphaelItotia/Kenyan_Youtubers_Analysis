@@ -70,6 +70,7 @@ Data visuals that may be appropriate include:
 ![]()
 
 ##### Tools
+
 | Tool      | Purpose    |
 |---------|---------------------------|
 |Excel      |         Exploring the data                        |
