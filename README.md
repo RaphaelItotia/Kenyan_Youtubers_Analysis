@@ -67,7 +67,7 @@ Data visuals that may be appropriate include:
 3. Scorecards
 4. Horizontal bar chart
    
-![]()
+![mokkup](images/mokkup.png)
 
 ##### Tools
 
