@@ -166,3 +166,4 @@ GROUP BY
 HAVING
     COUNT(*) > 1;
 ```
+##### Visualization
