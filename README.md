@@ -1,7 +1,7 @@
 # Top_Kenyan_Youtubers_by_29-05-2024
 
 ## Table of contents
--	Objective
+-	[Objective](#objective)
 - Data Source
 -	Steps
 -	Design
@@ -76,8 +76,9 @@ Data visuals that may be appropriate include:
 | ---- | ------- |
 |Excel | Exploring the data |
 |SQL Server |	Cleaning, testing, and analyzing the data|
+|Mokkup AI	|Designing the blueprint of the dashboard|
 |Power BI|	Visualizing the data using interactive dashboards|
 |GitHub	|Hosting the project documentation|
-|Mokkup AI	|Designing the blueprint of the dashboard|
+
 
 
