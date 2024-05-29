@@ -127,12 +127,14 @@ SELECT
 	video_views AS Video_views
 FROM dbo.My_extracted
 ```
+![create view](images/create_view.png)
 ##### Remove Duplicates
 ```sql
 SELECT DISTINCT *
 INTO Final_Kenyan_Youtubers
 FROM dbo.Kenyan_Youtubers
 ```
+![distinct](images/distinct.png)
 ##### Testing
 ###### Data type check
 ```sql
@@ -145,8 +147,7 @@ WHERE
     TABLE_NAME = 'Final_Kenyan_Youtubers';
 ```
 
-###### output
-![]()
+![data type](images/data_type.png)
 
 ###### Duplicate count check
 ```sql
