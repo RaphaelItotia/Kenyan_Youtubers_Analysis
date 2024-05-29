@@ -112,7 +112,7 @@ SELECT subs,
 FROM 
     dbo.My_extracted;
 ```
-![sql view]()
+![convert](images/convert_subs.png)
 ##### Create the SQL view
 ```sql
 CREATE view Kenyan_Youtubers AS 
