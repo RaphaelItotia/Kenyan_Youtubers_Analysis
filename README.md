@@ -13,7 +13,6 @@
     -	[Transform the Data](#transform-the-data)
     -	[Create the SQL View](#create-the-sql-view)
 -	[Testing](#testing)
-    -	[Data Quality Tests](#data-quality-tests)
 -	[Visualization](#visualization)
     -	[Outcomes](#outcomes)
     -	[DAX Measures](#dax-measures)
@@ -102,10 +101,64 @@ Here is a tabular representation of the expected schema for the cleaned data:
 |Total_uploads|	INTEGER|	NO|
 
 ##### Transform the data
-
+The dataset I used had not indicated the exact number of subscribers. So, I had to convert them as shown below
 ```sql
+SELECT subs,
+    CASE 
+        WHEN subs LIKE '%K' THEN CAST(REPLACE(subs,'K','') AS FLOAT) * 1000
+		WHEN subs LIKE '%M' THEN CAST(REPLACE(subs,'M','') AS FLOAT) * 1000000
+		ELSE CAST(subs AS FLOAT)
+    END AS converted_subs
+FROM 
+    dbo.My_extracted;
 ```
+![sql view]()
+##### Create the SQL view
+```sql
+CREATE view Kenyan_Youtubers AS 
+SELECT 
+	Channel,
+	uploads AS Uploads,
+	CASE 
+        WHEN subs LIKE '%K' THEN CAST(REPLACE(subs,'K','') AS FLOAT) * 1000
+		WHEN subs LIKE '%M' THEN CAST(REPLACE(subs,'M','') AS FLOAT) * 1000000
+		ELSE CAST(subs AS FLOAT)
+    END AS converted_subs,
+	video_views AS Video_views
+FROM dbo.My_extracted
+```
+##### Remove Duplicates
+```sql
+SELECT DISTINCT *
+INTO Final_Kenyan_Youtubers
+FROM dbo.Kenyan_Youtubers
+```
+##### Testing
+###### Data type check
+```sql
+SELECT
+    COLUMN_NAME,
+    DATA_TYPE
+FROM
+    INFORMATION_SCHEMA.COLUMNS
+WHERE
+    TABLE_NAME = 'Final_Kenyan_Youtubers';
+```
+###### output
+![]()
+###### Duplicate count check
+```sql
+SELECT
+    Channel,
+    COUNT(*) AS duplicate_count
+FROM
+    Final_Kenyan_Youtubers
 
 
+GROUP BY
+    Channel
 
 
+HAVING
+    COUNT(*) > 1;
+```
