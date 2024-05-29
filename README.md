@@ -45,7 +45,7 @@ We need a dataset containing columns;
 -	Total views
 -	Total uploads
   
-The data is sourced from [Social Blade](https://socialblade.com/youtube/top/country/ke). 
+The [data](dataset/My_extracted.csv) is sourced from [Social Blade](https://socialblade.com/youtube/top/country/ke). 
 ### Steps
 -	Design
 -	Development
