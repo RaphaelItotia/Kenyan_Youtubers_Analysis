@@ -144,8 +144,10 @@ FROM
 WHERE
     TABLE_NAME = 'Final_Kenyan_Youtubers';
 ```
+
 ###### output
 ![]()
+
 ###### Duplicate count check
 ```sql
 SELECT
