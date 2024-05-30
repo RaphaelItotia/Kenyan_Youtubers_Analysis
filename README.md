@@ -1,8 +1,8 @@
-# Top_Kenyan_Youtubers_by_29-05-2024
+# Unveiling_Top_Kenyan_Youtubers_Analysis_insights
+#### Using SQL and Microsoft Power BI
 
-## Table of contents
--	[Objective](#objective)
-- [Data Source](#data-source)
+## Table of content
+-	[Problem statement](#problem-statement)
 -	[Steps](#steps)
 -	[Design](#design)
     -	[Dashboard Blueprint](#dashboard-blueprint)
@@ -24,26 +24,12 @@
     -	[Potential ROI](#potential-roi)
     -	[Potential Courses of Actions](#potential-courses-of-actions)
 -	[Conclusion](#conclusion)
-### Objective
-The Head of Marketing seeks to identify the optimal Kenyan YouTubers for conducting marketing campaigns over the marketing period.
+### Problem statement
+**Challenge**: The Head of Marketing seeks to identify the optimal Kenyan YouTubers for conducting marketing campaigns over the marketing period.
 
-To create a dashboard that provides insights, we need a dataset of top Kenyan YouTubers in 2024 that includes
-- Number of subscribers
-- Total views
-- Total videos
-- Engagement metrics
+**Data**: To create a dashboard that provides insights, we have a rich dataset of top Kenyan YouTubers in 2024 containing details about Channel name, Number of subscribers, Total views, and Total uploads. 
 
-#### User story
-As the Head of Marketing, I want to use a dashboard that analyzes YouTube channels’ data in Kenya.
-This dashboard should allow me to identify the top performing channels based on metrics like subscriber base and average views.
-With this information, I can make more data-driven decisions about which Youtubers are right to collaborate with, and therefore maximize Return On Investment (ROI).
-
-### Data source
-We need a dataset containing columns;
--	Channel name
--	Subscribers
--	Total views
--	Total uploads
+**Goal**: To uncover the recommendable youtubers to work with by using Power BI.
   
 The [data](dataset/My_extracted.csv) is sourced from [Social Blade](https://socialblade.com/youtube/top/country/ke). 
 ### Steps
@@ -52,7 +38,7 @@ The [data](dataset/My_extracted.csv) is sourced from [Social Blade](https://soci
 -	Testing
 -	Analysis
 #### Design
-Dashboard components are determined by the following questions:
+Dashboard components are determined by the following Key areas of analysis:
 1.	Who are the top 10 YouTubers with the most subscribers?
 2.	Which 3 channels have the most views?
 3.	Which 3 channels have the highest average views per video?
