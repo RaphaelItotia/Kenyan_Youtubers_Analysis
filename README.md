@@ -16,7 +16,7 @@
 -	[Visualization](#visualization)
     -	[DAX Measures](#dax-measures)
 -	[Analysis](#analysis)
-    -	[Outcomes](#outcomes)
+    -	[Findings](#findings)
     -	[Validation](#validation)
     -	[Discovery](#discovery)
 -	[Recommendations](#recommendations)
@@ -152,7 +152,7 @@ HAVING
     COUNT(*) > 1;
 ```
 ##### Visualization
-![dashboard](images/Dashboard.png)
+![dashboard](images/dashboard.png)
 ###### DAX measures
 - Total Views (M)
   
@@ -219,4 +219,60 @@ VAR viewsPerSubscriber = DIVIDE(sumOfTotalViews, sumOfTotalSubscribers, BLANK())
 RETURN viewsPerSubscriber 
 ```
 
-##### Findings
+##### Analysis
+###### Findings
+1. Who are the top 10 YouTubers with the most subscribers?
+
+    |Rank|Channel|Total subscribers (M)|
+    |-----|------|----------|
+    |1|Citizen TV Kenya|4.80|
+    |2|TechFreeze| 2.82|
+    |3| KTN News Kenya|2.77|
+    |4| NTV Kenya| 2.42|
+    |5| Churchill Television|2.32|
+    |6| Alvins Audi |2.32|
+    |7| Africha Entertainment |2.08|
+    |8|DAUGLAS_FYP |2.07|
+    |9| Sharma Boy|1.77|
+    |10|  SUPER TAMUTAMU|1.69|
+
+2. Which 3 channels have the most views?
+
+   |Rank|Channel|Total views (M)|
+   |-----|------|----------|
+   |1|Alvins Audi|3310.92|
+   |2|Citizen TV Kenya| 1941.97|
+   |3| NTV Kenya|990.79|
+
+3. Which 3 channels have the highest average views per upload?
+
+   |Rank|Channel|avg views per upload (M)|
+   |-----|------|----------|
+   |1|Sharma Boy|2.75|
+   |2|Alvins Audi| 1.72|
+   |3|TechFreeze|0.60|
+  
+4. Which 3 channels have the highest views per subscriber ratio?
+
+   |Rank|Channel|views per subscriber|
+   |-----|------|----------|
+   |1|Alvins Audi|1427.12|
+   |2| NTV Kenya|409.42|
+   |3|Citizen TV Kenya| 404.58|
+   
+5. Which 3 channels have the highest subscriber engagement rate per upload?
+
+   |Rank|Channel|sub eng rate per upload|
+   |-----|------|----------| 
+   |1|TechFreeze|12995.39|
+    |2|Sharma Boy|12123.29|
+    |3|  SUPER TAMUTAMU|1348.76|
+    
+6. Which 3 channels have the most uploads?
+
+   |Rank|Channel|uploads|
+   |-----|------|----------|
+    |1|Citizen TV Kenya| 171453|
+    |2| KTN News Kenya|143904|
+    |3| NTV Kenya|92027|
+   
