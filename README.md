@@ -77,8 +77,8 @@ This is the step where you have an inspection of what is in the data, errors, in
 The objective is to enhance our dataset to guarantee its organization and readiness for analysis.
 
 The cleaned dataset should meet the following criteria and constraints:
-•	Each column should have data types that are suitable for its contents.
-•	No column should contain null values, indicating complete data for all records.(Data quality)
+- Each column should have data types that are suitable for its contents.
+- No column should contain null values, indicating complete data for all records.(Data quality)
 
 Here is a tabular representation of the expected schema for the cleaned data:
 
