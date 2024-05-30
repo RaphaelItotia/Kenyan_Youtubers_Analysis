@@ -127,7 +127,7 @@ DELETE FROM DuplicateCTE
 WHERE row_num > 1;
 
 ```
-![distinct](images/distinct.png)
+
 ##### Testing
 ###### Data type check
 ```sql
@@ -140,7 +140,7 @@ WHERE
     TABLE_NAME = 'Final_Kenyan_Youtubers';
 ```
 
-![data type](images/data_type.png)
+
 
 ###### Duplicate count check
 ```sql
