@@ -155,6 +155,7 @@ HAVING
 ![dashboard](images/Dashboard.png)
 ###### DAX measures
 - Total Views (M)
+  
 ```dax
 Total Views (M) = 
 VAR billion = 1000000
@@ -165,6 +166,7 @@ RETURN totalViews
 ```
 
 - Total subscribers (M)
+  
 ```dax
 Total Subscribers (M) = 
 VAR million = 1000000
@@ -175,6 +177,7 @@ RETURN totalSubscribers
 ```
 
 - Total Uploads
+  
 ```dax
 Total Uploads = 
 VAR totaluploads = SUM(Final_Kenyan_Youtubers[Uploads])
@@ -183,6 +186,7 @@ RETURN totaluploads
 ```
 
 - Average Views Per Upload (M)
+  
 ```dax
 Average Views per Upload (M) = 
 VAR sumOfTotalViews = SUM(Final_Kenyan_Youtubers[Video_views])
@@ -194,6 +198,7 @@ RETURN finalAvgViewsPerUpload
 ```
 
 - Subscriber Engagement Rate
+  
 ```dax
 Subscriber Engagement Rate = 
 VAR sumOfTotalSubscribers = SUM(Final_Kenyan_Youtubers[converted_subs])
@@ -204,6 +209,7 @@ RETURN subscriberEngRate
 ```
 
 - Views per subscriber
+  
 ```dax
 Views Per Subscriber = 
 VAR sumOfTotalViews = SUM(Final_Kenyan_Youtubers[Video_views])
