@@ -61,7 +61,7 @@ Data visuals that may be appropriate include:
 
 | Tool      | Purpose    |
 |---------|---------------------------|
-|Excel      |         Exploring the data                        |
+|Excel      |         To gather the data gotten from Social Blade |
 |SQL Server |         Cleaning, testing, and analyzing the data |
 |Mokkup AI  | Designing the blueprint of the dashboard          |
 |Power BI   | Visualizing the data using interactive dashboards |
