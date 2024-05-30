@@ -99,21 +99,7 @@ FROM
     dbo.My_extracted;
 ```
 ![convert](images/convert_subs.png)
-##### Create the SQL view
-```sql
-CREATE view Kenyan_Youtubers AS 
-SELECT 
-	Channel,
-	uploads AS Uploads,
-	CASE 
-        WHEN subs LIKE '%K' THEN CAST(REPLACE(subs,'K','') AS FLOAT) * 1000
-		WHEN subs LIKE '%M' THEN CAST(REPLACE(subs,'M','') AS FLOAT) * 1000000
-		ELSE CAST(subs AS FLOAT)
-    END AS converted_subs,
-	video_views AS Video_views
-FROM dbo.My_extracted
-```
-![create view](images/create_view.png)
+
 ##### Remove Duplicates
 ```sql
 WITH DuplicateCTE AS (
