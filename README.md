@@ -154,6 +154,7 @@ HAVING
 ##### Visualization
 ![dashboard](images/Dashboard.png)
 ###### DAX measures
+- Total Views (M)
 ```dax
 Total Views (M) = 
 VAR billion = 1000000
@@ -162,3 +163,54 @@ VAR totalViews = ROUND(sumOfTotalViews / billion, 2)
 
 RETURN totalViews
 ```
+
+- Total subscribers (M)
+```dax
+Total Subscribers (M) = 
+VAR million = 1000000
+VAR sumOfSubscribers = SUM(Final_Kenyan_Youtubers[converted_subs])
+VAR totalSubscribers = DIVIDE(sumOfSubscribers,million)
+
+RETURN totalSubscribers
+```
+
+- Total Uploads
+```dax
+Total Uploads = 
+VAR totaluploads = SUM(Final_Kenyan_Youtubers[Uploads])
+
+RETURN totaluploads
+```
+
+- Average Views Per Upload (M)
+```dax
+Average Views per Upload (M) = 
+VAR sumOfTotalViews = SUM(Final_Kenyan_Youtubers[Video_views])
+VAR sumOfTotalUploads = SUM(Final_Kenyan_Youtubers[Uploads])
+VAR  avgViewsPerUpload = DIVIDE(sumOfTotalViews,sumOfTotalUploads, BLANK())
+VAR finalAvgViewsPerUpload = DIVIDE(avgViewsPerUpload, 1000000, BLANK())
+
+RETURN finalAvgViewsPerUpload
+```
+
+- Subscriber Engagement Rate
+```dax
+Subscriber Engagement Rate = 
+VAR sumOfTotalSubscribers = SUM(Final_Kenyan_Youtubers[converted_subs])
+VAR sumOfTotalUploads = SUM(Final_Kenyan_Youtubers[Uploads])
+VAR subscriberEngRate = DIVIDE(sumOfTotalSubscribers, sumOfTotalUploads, BLANK())
+
+RETURN subscriberEngRate 
+```
+
+- Views per subscriber
+```dax
+Views Per Subscriber = 
+VAR sumOfTotalViews = SUM(Final_Kenyan_Youtubers[Video_views])
+VAR sumOfTotalSubscribers = SUM(Final_Kenyan_Youtubers[converted_subs])
+VAR viewsPerSubscriber = DIVIDE(sumOfTotalViews, sumOfTotalSubscribers, BLANK())
+
+RETURN viewsPerSubscriber 
+```
+
+##### Findings
