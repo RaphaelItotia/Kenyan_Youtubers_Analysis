@@ -398,7 +398,7 @@ Best option from this category: Citizen TV Kenya 
 
 ##### Action plan
 
-Based on this analysis, we beieve the best channel to advance a long-term partnership deal with to promote the client’s products is the Alvins Audi channel.
+Based on this analysis, we believe the best channel to advance a long-term partnership deal with to promote the client’s products is the Alvins Audi channel.
 
 1. Reach out to the teams behind each of these channels, starting with Alvins Audi.
 2. Negotiate deals within the budgets allocated to each marketing campaign
