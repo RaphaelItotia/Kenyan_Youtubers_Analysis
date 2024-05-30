@@ -1,6 +1,12 @@
 # Unveiling_Top_Kenyan_Youtubers_Analysis_insights
 #### Using SQL and Microsoft Power BI
 
+Through this project, I honed my skills in:
+  - Data Cleaning & Transformation
+- Data Visualization
+- Problem-Solving
+- Communication ️
+
 ## Table of content
 -	[Problem statement](#problem-statement)
 -	[Steps](#steps)
@@ -311,6 +317,7 @@ Best option from this category: TechFreeze
 2. Youtubers with the most views
 
 Campaign idea = Influencer marketing
+
 SQL Query
 ```sql
 DECLARE @conversionRate FLOAT = 0.02;        -- The conversion rate @ 2%
@@ -350,6 +357,7 @@ Best option from this category: Alvins Audi 
 3. Which 3 channels have the most uploads?
    
 Campaign idea = sponsored video series
+
 SQL Query
 ```sql
 DECLARE @conversionRate FLOAT = 0.02;           -- The conversion rate @ 2%
@@ -383,3 +391,22 @@ ORDER BY
 ```
 ![Citizen](images/uploads.png)
 Best option from this category: Citizen TV Kenya 
+
+##### Recommendations
+
+- TechFreeze is the best YouTube channel if we want to maximize Return On Investment based on subscribers. A product placement campaign would give a net profit of Ksh.11,887,043 
+- Alvins Audi is the best YouTuber if we are interested in maximizing Return On Investment based on number of views. An influencer marketing contract would give a net profit of Ksh.34,454,280
+- Citizen TV Kenya is the best Youtube channel if we are maximizing ROI based on who uploads frequently. Sponsoring several uploads would give a net profit of Ksh.46,304
+- Although not much, KTN News Kenya would also bring a net profit of Ksh.56,176 on product placement and NTV Kenya a net profit of Ksh.215,111 on influencer marketing.
+
+  Action plan
+
+Based on this analysis, we beieve the best channel to advance a long-term partnership deal with to promote the client’s products is the Alvins Audi channel.
+
+1. Reach out to the teams behind each of these channels, starting with Alvins Audi.
+2. Negotiate deals within the budgets allocated to each marketing campaign
+3. Kick off the campaigns and track each of their performances against the KPIs.
+4. Review how the campaigns have gone, gather insights and optimize based on feedback from converted customers and each channel’s audiences.
+
+
+
