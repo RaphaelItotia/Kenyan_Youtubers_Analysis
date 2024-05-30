@@ -153,3 +153,5 @@ HAVING
     COUNT(*) > 1;
 ```
 ##### Visualization
+![dashboard](images/Dashboard.png)
+###### DAX measures
