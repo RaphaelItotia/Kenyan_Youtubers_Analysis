@@ -319,7 +319,7 @@ WHERE
 ORDER BY
     net_profit DESC;
 ```
-![TechFreeze]()
+![TechFreeze](images/subs.png)
 Best option from this category: TechFreeze
 
 2. Youtubers with the most views
@@ -358,7 +358,7 @@ WHERE
 ORDER BY
     net_profit DESC;
 ```
-![Alvins Audi]()
+![Alvins Audi](images/views.png)
 Best option from this category: Alvins Audi 
 
 3. Which 3 channels have the most uploads?
@@ -395,5 +395,5 @@ WHERE
 ORDER BY
     net_profit DESC;
 ```
-![Citizen]()
+![Citizen](images/uploads.png)
 Best option from this category: Citizen TV Kenya 
