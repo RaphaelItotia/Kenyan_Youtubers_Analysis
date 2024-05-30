@@ -271,7 +271,7 @@ For this analysis, we'll focus on evaluating the metrics crucial for achieving t
 - Number of uploads
 
 ###### Validation
-1. Youtubers with the most subscribers
+**Youtubers with the most subscribers**
    
 Campaign idea = product placement
 
@@ -311,7 +311,7 @@ ORDER BY
 ![TechFreeze](images/subs.png)
 Best option from this category: TechFreeze
 
-2. Youtubers with the most views
+**Youtubers with the most views**
 
 Campaign idea = Influencer marketing
 
@@ -351,7 +351,7 @@ ORDER BY
 ![Alvins Audi](images/views.png)
 Best option from this category: Alvins Audi 
 
-3. Which 3 channels have the most uploads?
+**Which 3 channels have the most uploads**
    
 Campaign idea = sponsored video series
 
