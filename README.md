@@ -26,6 +26,7 @@ Through this project, I honed my skills in:
     -	[Validation](#validation)
 -	[Recommendations](#recommendations)
 -	[Action plan](#action-plan)
+  
 ### Problem statement
 **Challenge**: The Head of Marketing seeks to identify the optimal Kenyan YouTubers for conducting marketing campaigns over the marketing period.
 
