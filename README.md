@@ -396,7 +396,7 @@ Best option from this category: Citizen TV Kenya 
 - Citizen TV Kenya is the best Youtube channel if we are maximizing ROI based on who uploads frequently. Sponsoring several uploads would give a net profit of Ksh.46,304
 - Although not much, KTN News Kenya would also bring a net profit of Ksh.56,176 on product placement and NTV Kenya a net profit of Ksh.215,111 on influencer marketing.
 
- ##### Action plan
+##### Action plan
 
 Based on this analysis, we beieve the best channel to advance a long-term partnership deal with to promote the client’s products is the Alvins Audi channel.
 
