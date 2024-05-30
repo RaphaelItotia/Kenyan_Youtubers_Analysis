@@ -1,4 +1,4 @@
-# Unveiling_Top_Kenyan_Youtubers_Analysis_insights
+# Top_Kenyan_Youtubers_Analysis_insights
 #### Using SQL and Microsoft Power BI
 
 Through this project, I honed my skills in:
