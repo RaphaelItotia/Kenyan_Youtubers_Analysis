@@ -19,7 +19,7 @@ Through this project, I honed my skills in:
     -	[Transform the Data](#transform-the-data)
     -	[Testing](#testing)
     -	[Visualization](#visualization)
-       -	[DAX Measures](#dax-measures)
+        - [DAX Measures](#dax-measures)
 -	[Analysis](#analysis)
     -	[Findings](#findings)
     -	[Validation](#validation)
