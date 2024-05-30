@@ -14,7 +14,6 @@
     -	[Create the SQL View](#create-the-sql-view)
 -	[Testing](#testing)
 -	[Visualization](#visualization)
-    -	[Outcomes](#outcomes)
     -	[DAX Measures](#dax-measures)
 -	[Analysis](#analysis)
     -	[Outcomes](#outcomes)
@@ -155,3 +154,11 @@ HAVING
 ##### Visualization
 ![dashboard](images/Dashboard.png)
 ###### DAX measures
+```dax
+Total Views (B) = 
+VAR billion = 1000000000
+VAR sumOfTotalViews = SUM(view_uk_youtubers_2024[total_views])
+VAR totalViews = ROUND(sumOfTotalViews / billion, 2)
+
+RETURN totalViews
+```
