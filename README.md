@@ -17,7 +17,6 @@ Through this project, I honed my skills in:
     -	[Data Exploration](#data-exploration)
     -	[Data Cleaning](#data-cleaning)
     -	[Transform the Data](#transform-the-data)
-    -	[Create the SQL View](#create-the-sql-view)
 -	[Testing](#testing)
 -	[Visualization](#visualization)
     -	[DAX Measures](#dax-measures)
