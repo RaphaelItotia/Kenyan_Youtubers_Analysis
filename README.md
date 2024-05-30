@@ -283,6 +283,7 @@ For this analysis, we'll focus on evaluating the metrics crucial for achieving t
 
 ###### Validation
 1. Youtubers with the most subscribers
+   
 Campaign idea = product placement
 
 SQL Query
