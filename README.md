@@ -155,9 +155,9 @@ HAVING
 ![dashboard](images/Dashboard.png)
 ###### DAX measures
 ```dax
-Total Views (B) = 
-VAR billion = 1000000000
-VAR sumOfTotalViews = SUM(view_uk_youtubers_2024[total_views])
+Total Views (M) = 
+VAR billion = 1000000
+VAR sumOfTotalViews = SUM(Final_Kenyan_Youtubers[Video_views])
 VAR totalViews = ROUND(sumOfTotalViews / billion, 2)
 
 RETURN totalViews
