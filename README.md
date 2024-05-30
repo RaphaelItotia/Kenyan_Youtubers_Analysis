@@ -328,7 +328,7 @@ SQL Query
 ```sql
 DECLARE @conversionRate FLOAT = 0.02;        -- The conversion rate @ 2%
 DECLARE @productCost FLOAT = 999.0;            -- The product cost @ Ksh. 999
-DECLARE @campaignCost FLOAT = 130000.0;      -- The campaign cost @ Ksh. 130000
+DECLARE @campaignCost FLOAT = 130000.0;      -- The campaign cost @ Ksh. 130,000
 
 
 
@@ -367,7 +367,7 @@ SQL Query
 ```sql
 DECLARE @conversionRate FLOAT = 0.02;           -- The conversion rate @ 2%
 DECLARE @productCost FLOAT = 999.0;               -- The product cost @ Ksh. 999
-DECLARE @campaignCostPerUpload FLOAT = 15000.0;   -- The campaign cost per video @ Ksh. 20,000
+DECLARE @campaignCostPerUpload FLOAT = 15000.0;   -- The campaign cost per video @ Ksh. 15,000
 DECLARE @numberOfUploads INT = 12;               -- The number of videos (12)
 
 WITH ChannelData AS (
