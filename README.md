@@ -40,9 +40,9 @@ The [data](dataset/My_extracted.csv) is sourced from [Social Blade](https://soci
 Dashboard components are determined by the following Key areas of analysis:
 1.	Who are the top 10 YouTubers with the most subscribers?
 2.	Which 3 channels have the most views?
-3.	Which 3 channels have the highest average views per video?
+3.	Which 3 channels have the highest average views per upload?
 4.	Which 3 channels have the highest views per subscriber ratio?
-5.	Which 3 channels have the highest subscriber engagement rate per video uploaded?
+5.	Which 3 channels have the highest subscriber engagement rate per upload?
 6.	Which 3 channels have the most uploads?
 
 ##### Dashboard blueprint
@@ -116,9 +116,16 @@ FROM dbo.My_extracted
 ![create view](images/create_view.png)
 ##### Remove Duplicates
 ```sql
-SELECT DISTINCT *
-INTO Final_Kenyan_Youtubers
-FROM dbo.Kenyan_Youtubers
+WITH DuplicateCTE AS (
+    SELECT
+        *,
+        ROW_NUMBER() OVER (PARTITION BY Video_views, Uploads, converted_subs ORDER BY Channel) AS row_num
+    FROM
+       Final_Kenyan_Youtubers
+)
+DELETE FROM DuplicateCTE
+WHERE row_num > 1;
+
 ```
 ![distinct](images/distinct.png)
 ##### Testing
@@ -137,19 +144,11 @@ WHERE
 
 ###### Duplicate count check
 ```sql
-SELECT
-    Channel,
-    COUNT(*) AS duplicate_count
-FROM
-    Final_Kenyan_Youtubers
-
-
-GROUP BY
-    Channel
-
-
-HAVING
-    COUNT(*) > 1;
+SELECT Video_views,
+           COUNT(*)
+FROM Final_Kenyan_Youtubers
+GROUP BY Video_views
+HAVING COUNT(*) > 1;
 ```
 ##### Visualization
 ![dashboard](images/dashboard.png)
@@ -276,3 +275,124 @@ RETURN viewsPerSubscriber
     |2| KTN News Kenya|143904|
     |3| NTV Kenya|92027|
    
+For this analysis, we'll focus on evaluating the metrics crucial for achieving the expected ROI for our marketing client. Specifically, we'll prioritize analyzing YouTube channels based on the following key metrics:
+
+- Number of subscribers
+- Total views
+- Number of uploads
+
+###### Validation
+1. Youtubers with the most subscribers
+Campaign idea = product placement
+
+SQL Query
+```sql
+   DECLARE @conversionRate FLOAT = 0.02;		-- The conversion rate @ 2%
+DECLARE @productCost FLOAT = 999.0;			-- The product cost @ Ksh. 999
+DECLARE @campaignCost FLOAT = 50000.0;		-- The campaign cost @ Ksh. 50,000	
+   
+
+WITH ChannelData AS (
+    SELECT 
+        Channel,
+        Video_views,
+        Uploads,
+        (CAST(Video_views AS FLOAT) / Uploads) AS avg_views_per_upload
+    FROM 
+        Top_Kenyan_YouTubers_2024.dbo.Final_Kenyan_Youtubers
+)
+    
+
+SELECT 
+    Channel,
+    avg_views_per_upload,
+    (avg_views_per_upload * @conversionRate) AS potential_products_sold_per_upload,
+    (avg_views_per_upload * @conversionRate * @productCost) AS potential_revenue_per_upload,
+    ((avg_views_per_upload * @conversionRate * @productCost) - @campaignCost) AS net_profit
+FROM 
+    ChannelData
+
+WHERE
+
+    Channel IN (' Citizen TV Kenya ', ' TechFreeze ', ' KTN News Kenya ')
+ORDER BY
+    net_profit DESC;
+```
+![TechFreeze]()
+Best option from this category: TechFreeze
+
+2. Youtubers with the most views
+
+Campaign idea = Influencer marketing
+SQL Query
+```sql
+DECLARE @conversionRate FLOAT = 0.02;        -- The conversion rate @ 2%
+DECLARE @productCost FLOAT = 999.0;            -- The product cost @ Ksh. 999
+DECLARE @campaignCost FLOAT = 130000.0;      -- The campaign cost @ Ksh. 130000
+
+
+
+WITH ChannelData AS (
+    SELECT
+        Channel,
+        Video_views,
+        Uploads,
+        (CAST(Video_views AS FLOAT) / Uploads) AS avg_views_per_upload
+    FROM
+        Top_Kenyan_Youtubers_2024.dbo.Final_Kenyan_Youtubers
+)
+
+
+SELECT
+    Channel,
+    avg_views_per_upload,
+    (avg_views_per_upload * @conversionRate) AS potential_products_sold_per_upload,
+    (avg_views_per_upload * @conversionRate * @productCost) AS potential_revenue_per_upload,
+    ((avg_views_per_upload * @conversionRate * @productCost) - @campaignCost) AS net_profit
+FROM
+    ChannelData
+	
+WHERE
+    Channel IN (' Alvins Audi ', ' Citizen TV Kenya ', ' NTV Kenya ')
+ORDER BY
+    net_profit DESC;
+```
+![Alvins Audi]()
+Best option from this category: Alvins Audi 
+
+3. Which 3 channels have the most uploads?
+   
+Campaign idea = sponsored video series
+SQL Query
+```sql
+DECLARE @conversionRate FLOAT = 0.02;           -- The conversion rate @ 2%
+DECLARE @productCost FLOAT = 999.0;               -- The product cost @ Ksh. 999
+DECLARE @campaignCostPerUpload FLOAT = 15000.0;   -- The campaign cost per video @ Ksh. 20,000
+DECLARE @numberOfUploads INT = 12;               -- The number of videos (12)
+
+WITH ChannelData AS (
+    SELECT
+        Channel,
+        Video_views,
+        Uploads,
+        (CAST(Video_views AS FLOAT) / Uploads) AS avg_views_per_upload
+    FROM
+        Top_Kenyan_Youtubers_2024.dbo.Final_Kenyan_Youtubers
+)
+SELECT
+    Channel,
+    avg_views_per_upload,
+    (avg_views_per_upload * @conversionRate) AS potential_products_sold_per_upload,
+    (avg_views_per_upload * @conversionRate * @productCost) AS potential_revenue_per_upload,
+    ((avg_views_per_upload * @conversionRate * @productCost) - (@campaignCostPerUpload * @numberOfUploads)) AS net_profit
+FROM
+    ChannelData
+WHERE
+    Channel LIKE '%Citizen TV Kenya%'
+    OR Channel LIKE '%NTV Kenya%'
+    OR Channel LIKE '%KTN News Kenya%'
+ORDER BY
+    net_profit DESC;
+```
+![Citizen]()
+Best option from this category: Citizen TV Kenya 
