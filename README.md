@@ -140,7 +140,7 @@ GROUP BY Video_views
 HAVING COUNT(*) > 1;
 ```
 ##### Visualization
-![dashboard](images/dashboard.png)
+![dashboard](images/dashboard1.gif)
 ###### DAX measures
 - Total Views (M)
   
