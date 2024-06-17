@@ -1,5 +1,4 @@
-# Top_Kenyan_Youtubers_Analysis_insights
-#### Using SQL and Microsoft Power BI
+![](images/Home.png)
 
 Through this project, I honed my skills in:
   - Data Cleaning & Transformation
