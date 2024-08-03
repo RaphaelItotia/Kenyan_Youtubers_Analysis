@@ -61,11 +61,11 @@ Data visuals that may be appropriate include:
 
 | Tool      | Purpose    |
 |---------|---------------------------|
-|Excel      |         To gather the data gotten from Social Blade |
-|SQL Server |         Cleaning, testing, and analyzing the data |
-|Mokkup AI  | Designing the blueprint of the dashboard          |
-|Power BI   | Visualizing the data using interactive dashboards |
-|GitHub	    | Hosting the project documentation                 |
+|`Excel`      |         To gather the data gotten from Social Blade |
+|`SQL Server` |         Cleaning, testing, and analyzing the data |
+|`Mokkup AI`  | Designing the blueprint of the dashboard          |
+|`Power BI`   | Visualizing the data using interactive dashboards |
+|`GitHub`	    | Hosting the project documentation                 |
 
 #### Development
 ##### Data exploration 
